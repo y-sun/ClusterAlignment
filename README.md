@@ -22,7 +22,7 @@ If choosing "other", template information will be read from "template.dat". If c
 * POSITION_WRITE {0 or 1} : turn off/on to write the aligned position
 * MIRROR {0 or 1} : turn off/on to check the mirror image during the alignment 
 * ELEMENT {0 or 1} : turn off/on to check the chemical element 
-* RANDOM_TIME {interge number} : It is highly suggested to optimize the random rotation time before starting calculation. This factor directly scales the computational time linearly. Larger `RANDOM_TIME` leads to higher accuracy. The Lower symmetry template usually requires larger `RANDOM_TIME`.
+* RANDOM_TIME {interge number} : It is highly suggested to optimize the random rotation time before starting calculation. This factor scales the computational time linearly. Larger `RANDOM_TIME` leads to higher accuracy. The Lower symmetry template usually requires larger `RANDOM_TIME`.
 
 
 ## Reference
