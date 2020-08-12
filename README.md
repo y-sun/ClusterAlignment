@@ -28,9 +28,9 @@ If choosing "other", template information will be read from "template.dat". If c
 ## Reference
 Please cite Sun *et al.*, Sci. Rep. 6,23734 (2016) if the resutls are used in your paper.
 
-    @article{sun2016crystal,
+    @article{CA2016,
     title={‘Crystal genes’ in metallic liquids and glasses},
-    author={Sun, Yang and Zhang, Feng and Ye, Zhuo and Zhang, Yue and Fang, Xiaowei and Ding, Zejun and Wang, Cai-Zhuang and Mendelev, Mikhail I and Ott, Ryan T and            Kramer, Matthew J and others},
+    author={Sun, Yang and Zhang, Feng and Ye, Zhuo and Zhang, Yue and Fang, Xiaowei and Ding, Zejun and Wang, Cai-Zhuang and Mendelev, Mikhail I and Ott, Ryan T and Kramer, Matthew J and others},
     journal={Scientific reports},
     volume={6},
     pages={23734},
