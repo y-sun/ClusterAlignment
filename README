@@ -1,16 +1,10 @@
-# ClusterAlignment
-Source code of Cluster Alignment method
+To compile the codes, type "make -f Makefile"
 
-## Compile
-    make -f Makefile
+To run the code, type "./align.x para.in"
 
-## Run
-    align.x para.in
-
-## Parameters
-Input parameters includes
-
-```TASK_TYPE
+A parameter file (para.in) should be passed to the code for the initialization.
+Parameters include:
+TASK_TYPE
      FCC, HCP, BCC, ICO(icosahedral), OCT(octahedral), TET(tetrahedral), 3661, 16661, 15551, other, PW
      If choosing "other", template information will be read from "template.dat".
      If choosing "PW", pair-wise alignment will be performed.  
@@ -34,9 +28,4 @@ RANDOM_TIME
      This factor will affect the computational time significantly. It mainly depends on 
      the symmetry of the motif(template) and the accuracy you want to get. 
 
-
-
-
-## Reference
-Please cite Sun et al, Sci. Rep. 6,23734 (2016) if the resutls are used in your paper.
-The first Cluster Alignment code was written with Fortran by X.W. Fang in Phys. Rev. B 82,184204(2010)
+Please cite Sci. Rep. 6,23734 (2016) if the resutls are used in your paper.

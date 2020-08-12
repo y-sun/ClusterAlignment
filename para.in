@@ -1,0 +1,10 @@
+TASK_TYPE       FCC  EFFECT_NATOM 10 
+INPUT_FILE      cluster.dat 
+NCLUSTER        100
+TRANSLATE       1  # 0/1 : turn off/on the cluster translation
+RESIZE          5  # number of times to make cluster scaling. if 0, scaling is not applied.
+POSITION_WRITE  1  # 0/1 : turn off/on to write the aligned position
+MIRROR          0  # 0/1 : turn off/on the chiral check
+ELEMENT         0  # 0/1 : turn off/on the chemical elements
+
+RANDOM_TIME    5000

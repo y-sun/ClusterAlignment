@@ -1,0 +1,38 @@
+v1.0.1
+Change the type of data in to_string() function. In several c++ compiliers, "to_string()" function 
+only supports (long double) (long long) (unsinged long long) data format.
+
+v1.0.2
+Add a user-decided effective atom number for pairwise alignment (EFFECT_NATOM).
+
+v1.0.3
+Fix a bug for random rotation(ux,uy,uz sampling).
+
+v1.0.4
+Add a MIRROR option to check the reflection symmetry during alignment.
+
+v1.0.5
+Add a ELEMENT option to distinguish chemical elements (if different element, score += 0.10).
+
+v1.0.6
+Change all "extern const" statements to "extern" to prevent a bug for OSX compiler. The initial random
+number is printed out.
+
+v1.0.7
+RESIZE option can now be used to determine scaling times.
+For example, if RESIZE=5, the bonds in the template will be scaled as 0.96 0.98 1.00 1.02 1.04.
+
+v1.0.8
+Add BCC template in the template motif.
+
+v1.1.0
+Remove LJ scheme, use score as the only criteria to perform minimization.
+
+v1.1.1
+Add template motif 15551 and 16661.
+
+v1.1.2
+Output atomic score in the position file.
+
+v1.1.3
+Output pairing atom index in the position file.
