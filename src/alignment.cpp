@@ -27,8 +27,6 @@ double align ( Cluster & A_init, const Cluster & B_init, string tag, string word
     extern bool user_position;
     extern int  user_rant;
     string filename="TMP/"+tag+".xyz";
-    std::ofstream fout;
-    fout.open(filename.c_str());
     int nran_conv;
     if( user_rant > para::nran_conv) 
         nran_conv =  user_rant;
@@ -133,8 +131,12 @@ double align ( Cluster & A_init, const Cluster & B_init, string tag, string word
     }
     delete[] B;
     A_f.comment(words+" "+std::to_string((long double)sc_f)+" opt  "+std::to_string((long long)best_opt));
-    A_f.writefile(fout);
-    fout.close();
+    if(user_position) { 
+        std::ofstream fout;
+        fout.open(filename.c_str());
+        A_f.writefile(fout);
+        fout.close();
+    }
     return sc_f;
 }
 
