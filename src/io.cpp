@@ -50,10 +50,18 @@ string read_para(char* argv[]) {
         user_jobtype = 0;
     else if( user_motif == "PW")
         user_jobtype = 1;
-    int rand_init=time(NULL);
-    ran_ini =  (rand_init%1000)*10+ (rand_init%2)*10000;
+    //int rand_init=time(NULL);
+    //ran_ini = rand_init  ;
+    //ran_ini =  (rand_init%1000)*10+ (rand_init%2)*10000;
     //std::cout << "initial_random_number: " << rand_init << std::endl;
-    srand(ran_ini);
+    //srand(ran_ini);
+    
+    std::random_device rd; // obtain a random number from hardware
+    std::mt19937 gen(rd()); // seed the generator
+    std::uniform_int_distribution<> distr(0, 99999); // define the range
+
+    ran_ini = distr(gen) ;
+
     return filename;
 }
 

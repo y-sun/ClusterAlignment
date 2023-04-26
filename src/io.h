@@ -5,6 +5,7 @@
 #include <string>
 #include "cluster.h"
 #include <iomanip>
+#include <random>
 
 string read_para(char* argv[]);
 void read_data(std::string filename, int nc, Cluster *clusters);
