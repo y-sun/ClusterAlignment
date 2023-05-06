@@ -54,13 +54,13 @@ string read_para(char* argv[]) {
     //ran_ini = rand_init  ;
     //ran_ini =  (rand_init%1000)*10+ (rand_init%2)*10000;
     //std::cout << "initial_random_number: " << rand_init << std::endl;
-    //srand(ran_ini);
     
     std::random_device rd; // obtain a random number from hardware
     std::mt19937 gen(rd()); // seed the generator
     std::uniform_int_distribution<> distr(0, 99999); // define the range
 
     ran_ini = distr(gen) ;
+    srand(ran_ini);
 
     return filename;
 }
